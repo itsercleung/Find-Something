@@ -1,0 +1,27 @@
+html,
+body {
+  width: 100%;
+  background-color: black !important;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff570;
+  border-radius: 3px;
+}
