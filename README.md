@@ -1,10 +1,19 @@
-## Find-Something
+## Find-Something 📼
 
-Find something via gifs 📼 - Used for drawing? editing? recording? making? anything?
+`Updated 9/02/2020 by eric`
 
-`Note`: Not hosted anywhere yet...
-`Note2`: Needs refactoring...
-`Note3`: This is mainly for learning...
+Find something via gifs - Could be used for inspiration? maybe?
+
+![Showcase](https://media.giphy.com/media/SUPpeYY8P1fPXwuf4l/giphy.gif)
+
+Used GIPHY API to search and pull gifs: [GIPHY API](https://developers.giphy.com/branch/master/docs/api/)
+
+- `Note`: Not hosted anywhere yet...
+- `Note2`: Needs refactoring...
+- `Note3`: This is mainly for learning...
+- `Note4`: Staring too long may cause headaches...
+
+---
 
 ### Running locally
 
