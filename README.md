@@ -17,11 +17,12 @@ Used GIPHY API to search and pull gifs: [GIPHY API](https://developers.giphy.com
 
 ### Running locally
 
-To run the application locally (requires npm, nodeJS, ReactJS):
+To run the application locally (requires npm, nodeJS, reactJS):
 
+1. Install npm modules via from `package.json` files from `./client`, `./backend`, `../find-something` using `npm install`
 1. Change to the rooot directory via `cd findsomething`
 2. Run script `npm start`
 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 - `Note`: Runs the app in the development mode.
-- `Note2`: Needs .env file for API key - or make your own!
+- `Note2`: Needs .env file for GIPHY API key - or make your own!
