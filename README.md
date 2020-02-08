@@ -19,7 +19,7 @@ Used GIPHY API to search and pull gifs: [GIPHY API](https://developers.giphy.com
 
 To run the application locally (requires npm, nodeJS, reactJS):
 
-1. Install npm modules via from `package.json` files from `./client`, `./backend`, `../find-something` using `npm install`
+1. Install npm modules via from `package.json` files from `./client`, `./backend`, `./find-something` using `npm install`
 1. Change to the rooot directory via `cd findsomething`
 2. Run script `npm start`
 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
