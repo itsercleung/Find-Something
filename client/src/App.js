@@ -34,8 +34,9 @@ class App extends Component {
   };
 
   onSearchChange = query => {
-    this.setState({ q: query });
-    this.updateSearchResults();
+    this.setState({ q: query }, () => {
+      this.updateSearchResults();
+    });
   };
 
   render() {
@@ -43,13 +44,13 @@ class App extends Component {
       <div className="App scrollbar">
         <div className="Wrapper">
           <Results data={this.state.data} />
+          <Search
+            id="searchBar"
+            defaultValue={this.state.q}
+            onSearchChange={this.onSearchChange}
+          />
           <Footer />
         </div>
-        <Search
-          id="searchBar"
-          defaultValue={this.state.q}
-          onSearchChange={this.onSearchChange}
-        />
       </div>
     );
   }

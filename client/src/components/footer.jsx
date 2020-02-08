@@ -1,22 +1,17 @@
 import React, { Component } from "react";
 
-var style = {
-  position: "fixed",
-  left: "0px",
-  bottom: "2.4%",
-  right: "0px",
-  color: "#fff570",
-  opacity: 0.6
+var headerText = {
+  fontSize: "17px"
 };
 
-var headerText = {
-  fontSize: "19px"
+var regText = {
+  fontSize: "13px"
 };
 
 class Footer extends Component {
   render() {
     return (
-      <div style={style}>
+      <div id="linkWrapper">
         <div style={headerText}>
           <a
             className="link"
@@ -27,7 +22,7 @@ class Footer extends Component {
             FIND-SOMETHING
           </a>
         </div>
-        <div>
+        <div style={regText}>
           <a
             className="link"
             href="https://github.com/itsercleung"

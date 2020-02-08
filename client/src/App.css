@@ -1,21 +1,26 @@
 .App {
   text-align: center;
+  font-family: 'Space Mono', monospace;
 }
 
 #searchBar {
   text-align: center;
   position: fixed;
-  top: 50%;
+  top: 63%;
   font-size: 45px;
   font-weight: bold;
-  border-bottom: 8px solid #fff570;
-  margin-left: 0.3%;
+  border-bottom: 7px solid #fff570;
+  left: 0.3%;
+}
+
+#searchBarContainer {
+  height: 0;
 }
 
 #loadSkeleton {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 44%;
 }
 
 /* LINK HOVER */
@@ -31,45 +36,31 @@ a:hover {
   color: #fff570;
 }
 
-.link {
-  font-weight: 700;
-  text-decoration: none !important;
-}
-
 /*
 * Underlining of link
 */
+#linkWrapper {
+  position: fixed;
+  left: 0px;
+  bottom: 2.4%;
+  right: 0px;
+  color: #fff570;
+}
+
 .link {
   position: relative;
   z-index: 1;
-  display: inline-flex;
 
   padding-left: 0px;
   padding-bottom: 3px;
   padding-right: 0px;
+
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease-out;
+  opacity: 0.5;
 }
 
-.link::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #fff570 15%, rgba(0, 0, 0, 0) 15%);
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  z-index: -1;
-  will-change: width;
-  transform-origin: left bottom;
-}
-
-.link:hover::before {
-  width: 0;
-}
-
-.link::before {
-  transition: width 0.2s ease-out;
-}
-
-.link:hover::before {
-  transition-duration: 0.2s;
+.link:hover {
+  opacity: 1;
 }
