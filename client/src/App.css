@@ -9,8 +9,9 @@
   top: 63%;
   font-size: 45px;
   font-weight: bold;
-  border-bottom: 7px solid #fff570;
-  left: 0.3%;
+  text-decoration: underline;
+  left: 0.35%;
+  opacity: 1;
 }
 
 #searchBarContainer {
@@ -62,5 +63,27 @@ a:hover {
 }
 
 .link:hover {
+  opacity: 1;
+}
+
+.infoStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid #000000;
+  opacity: 0;
+
+  transition: all 0.3s ease;
+  will-change: opacity background-color;
+}
+
+.infoStyle:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 4px solid #fff570;
   opacity: 1;
 }

@@ -23,7 +23,12 @@ class Results extends Component {
               {this.props.data.map((result, i) => (
                 <GridListTile key={i}>
                   <Result
-                    description={result.title}
+                    title={result.title}
+                    date={result.import_datetime}
+                    username={result.username}
+                    avatar={
+                      result.username === "" ? "" : result.user.avatar_url
+                    }
                     embedUrl={result.images.fixed_height.url}
                   ></Result>
                 </GridListTile>
