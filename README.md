@@ -4,7 +4,7 @@
 
 Find something via gifs - Could be used for inspiration? maybe?
 
-![](https://media.giphy.com/media/SUPpeYY8P1fPXwuf4l/giphy.gif)
+![sample](https://media.giphy.com/media/SUPpeYY8P1fPXwuf4l/giphy.gif)
 
 Used GIPHY API to search and pull gifs: [GIPHY API](https://developers.giphy.com/branch/master/docs/api/)
 
