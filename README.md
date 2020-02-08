@@ -2,7 +2,9 @@
 
 `Updated 9/02/2020 by eric`
 
-<img src="./assets/sample.gif" width="800">
+
+<img src="./assets/sample.gif" width="900">
+
 
 Find something via gifs - Could be used for inspiration? maybe?
 Used GIPHY API to search and pull gifs: [GIPHY API](https://developers.giphy.com/branch/master/docs/api/)
