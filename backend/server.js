@@ -12,6 +12,7 @@ require("dotenv").config();
 
 //Setting up API key for GIPHY
 const GIPHY_API_KEY = process.env.GIPHY_API_KEY;
+const OFFSET_VALUE = 124;
 
 //Setting up router parameters
 const API_PORT = 3001;
@@ -56,9 +57,9 @@ router.post("/searchResults", (req, res) => {
                 api_key: GIPHY_API_KEY,
                 q: q,
                 limit: limit,
-                offset: 0,
+                offset: getRandomInt(OFFSET_VALUE),
                 rating: "PG-13",
-                lang: lang
+                lang: lang,
             }
         },
         function (error, response, body) {
@@ -70,3 +71,10 @@ router.post("/searchResults", (req, res) => {
         });
 
 });
+
+//-------------------------------------------------------------------------------------//
+//------------------------------- SERVER HELPER FUNCTIONS -----------------------------//
+//-------------------------------------------------------------------------------------//
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}

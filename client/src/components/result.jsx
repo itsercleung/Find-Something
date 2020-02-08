@@ -7,17 +7,6 @@ const gifWrapper = {
   height: "180px"
 };
 
-const infoStyle = {
-  position: "absolute",
-  top: "0",
-  left: "0",
-  border: "2px solid #fff570",
-  height: "100%",
-  width: "100%",
-  padding: "10%",
-  backgroundColor: "rgba(0,0,0,0.7)"
-};
-
 const imgStyle = {
   position: "relative"
 };
@@ -42,6 +31,10 @@ const infoAvatarStyle = {
   borderRadius: "60px",
   marginTop: "20px",
   marginBottom: "5px"
+};
+
+const loadingStyle = {
+  filter: "grayscale(100%)"
 };
 
 class Result extends Component {
@@ -80,6 +73,7 @@ class Result extends Component {
             src={this.props.embedUrl}
             style={imgStyle}
           />
+          <p style={loadingStyle}>🤷‍♂</p>
           <div className="infoStyle">
             <p style={infoTextStyle}>{this.props.title}</p>
             <p style={smallInfoTextStyle}>{this.props.date}</p>
