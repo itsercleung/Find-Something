@@ -22,7 +22,8 @@ const infoTextStyle = {
 const smallInfoTextStyle = {
   fontSize: "11px",
   overflow: "hidden",
-  textOverflow: "ellipsis"
+  textOverflow: "ellipsis",
+  color: "white"
 };
 
 const infoAvatarStyle = {
@@ -34,7 +35,8 @@ const infoAvatarStyle = {
 };
 
 const loadingStyle = {
-  filter: "grayscale(100%)"
+  filter: "grayscale(100%)",
+  opacity: "0.1"
 };
 
 class Result extends Component {
@@ -73,7 +75,7 @@ class Result extends Component {
             src={this.props.embedUrl}
             style={imgStyle}
           />
-          <p style={loadingStyle}>🤷‍♂</p>
+          <p style={loadingStyle}>Loading... 🤷‍♂</p>
           <div className="infoStyle">
             <p style={infoTextStyle}>{this.props.title}</p>
             <p style={smallInfoTextStyle}>{this.props.date}</p>

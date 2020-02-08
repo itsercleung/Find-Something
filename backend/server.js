@@ -12,7 +12,7 @@ require("dotenv").config();
 
 //Setting up API key for GIPHY
 const GIPHY_API_KEY = process.env.GIPHY_API_KEY;
-const OFFSET_VALUE = 124;
+const OFFSET_VALUE = 24;
 
 //Setting up router parameters
 const API_PORT = 3001;
